@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="imagens/logo-coffe.png" type="image/png">
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://unpkg.com/scrollreveal"></script>
@@ -15,6 +14,7 @@
 
 <body>
   <img class="logo-flutuante" src="./imagens/logowhatsapp.png" alt="">
+  <!-- Cabeçalho -->
   <header>
     <nav>
       <div>
@@ -27,34 +27,34 @@
           <li> Contato </li>
         </ul>
       </div>
+      <!-- Menu icone mobile -->
       <div class="mobile-menu-icon">
-        <button onclick="abrirMenu()"><img src="imagens/icone-menu.png" alt="" height="40px">
-
-        </button>
-
-      </div>
-      <div class="mobile-menu">
-        <ul class="header-navigation-mobile">
-          <li class="nav-item"><a href="#" class="nav-link">Home</a> </li>
-          <li class="nav-item"><a href="#" class="nav-link">Sobre</a> </li>
-          <li class="nav-item"><a href="#" class="nav-link">Contato</a> </li>
-        </ul>
+        <button onclick="abrirMenu()"><img src="imagens/icone-menu-hamb.png" alt="" height="30px"></button>
       </div>
     </nav>
+    <div class="mobile-menu">
+      <div class="container-menu-close">
+        <button class="close-menu" onclick="abrirMenu()">X</button>
+      </div>
+      <ul class="header-navigation-mobile">
+        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Pedidos</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+      </ul>
+    </div>
   </header>
   <section>
-
-
+    <!-- Carousel das imagens -->
     <div id="carouselExample" class="carousel slide">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./imagens/banner.png" class="d-block w-100" alt="...">
+          <img src="./imagens/banner.png" class="d-block w-100" alt="Imagem1">
         </div>
         <div class="carousel-item">
-          <img src="./imagens/banner2-cafeteria.png" class="d-block w-100" alt="...">
+          <img src="./imagens/banner2-cafeteria.png" class="d-block w-100" alt="Imagem2">
         </div>
         <div class="carousel-item">
-          <img src="./imagens/cafeteria-coffe.png" class="d-block w-100" alt="...">
+          <img src="./imagens/cafeteria-coffe.png" class="d-block w-100" alt="Imagem3">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -66,20 +66,18 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
   </section>
 
-
-  <!-- ESTA PARTE FICAM AS PROMOÇÕES DE CAFÉS E CARDÁPIOS  -->
+  <!-- ESTA PARTE FICAM AS VARIEDADES DE CAFÉS E CARDÁPIOS -->
   <div class="container-titulo">
-    <h1 class="titulo"> VEJA NOSSAS VARIEDADES</h1>
+    <h1 class="titulo"> VEJA NOSSAS VARIEDADES ☕</h1>
+    <!-- Linha abaixo dos Títulos -->
     <div class="line">
-      
+
     </div>
   </div>
-  
+  <!-- Sessão dos Cards e Imagens -->
   <section class="container-cards">
-
     <div class="card" style="width: 20rem;">
       <img src="./imagens/imagem1.jpg" class="card-img-top" alt="...">
       <div class="card-body">
@@ -126,18 +124,42 @@
       </div>
     </div>
 
-  </section>
-
-  <div class="container-titulo">
-    <h1 class="titulo"> VEJA NOSSAS VARIEDADES</h1>
-    <div class="line">
-      
+    <div class="card" style="width: 20rem;">
+      <img src="./imagens/imagem5.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cappucino</h5>
+        <p class="card-text">
+          Desfrute de um cappuccino clássico, uma harmonia perfeita de café expresso intenso, espuma de leite cremosa e
+          uma pitada de cacau
+        </p>
+        <a href="#" class="btn btn-danger">Solicitar</a>
+        <a href="#" class="btn btn-danger">Avaliar</a>
+      </div>
     </div>
-  </div>
-  <section class="container-cards">
 
     <div class="card" style="width: 20rem;">
       <img src="./imagens/imagem1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cappucino</h5>
+        <p class="card-text">
+          Desfrute de um cappuccino clássico, uma harmonia perfeita de café expresso intenso, espuma de leite cremosa e
+          uma pitada de cacau
+        </p>
+        <a href="#" class="btn btn-danger">Solicitar</a>
+        <a href="#" class="btn btn-danger">Avaliar</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-titulo">
+    <h1 class="titulo"> OS MAIS RECOMENDADOS 😉</h1>
+    <div class="line">
+
+    </div>
+  </div>
+  <section class="container-cards">
+    <div class="card" style="width: 20rem;">
+      <img src="./imagens/imagem2.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Cappucino</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
@@ -148,7 +170,7 @@
     </div>
 
     <div class="card" style="width: 20rem;">
-      <img src="./imagens/imagem2.jpg" class="card-img-top" alt="...">
+      <img src="./imagens/imagem3.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Grão de café</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
@@ -159,7 +181,7 @@
     </div>
 
     <div class="card" style="width: 20rem;">
-      <img src="./imagens/imagem3.jpg" class="card-img-top" alt="...">
+      <img src="./imagens/imagem4.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Café tradicional</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
@@ -170,7 +192,7 @@
     </div>
 
     <div class="card" style="width: 20rem;">
-      <img src="./imagens/imagem4.jpg" class="card-img-top" alt="...">
+      <img src="./imagens/imagem5.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Café com leite</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
@@ -180,78 +202,105 @@
       </div>
     </div>
 
+    <div class="card" style="width: 20rem;">
+      <img src="./imagens/imagem1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cappucino</h5>
+        <p class="card-text">
+          Desfrute de um cappuccino clássico, uma harmonia perfeita de café expresso intenso, espuma de leite cremosa e
+          uma pitada de cacau
+        </p>
+        <a href="#" class="btn btn-danger">Solicitar</a>
+        <a href="#" class="btn btn-danger">Avaliar</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 20rem;">
+      <img src="./imagens/imagem2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cappucino</h5>
+        <p class="card-text">
+          Desfrute de um cappuccino clássico, uma harmonia perfeita de café expresso intenso, espuma de leite cremosa e
+          uma pitada de cacau
+        </p>
+        <a href="#" class="btn btn-danger">Solicitar</a>
+        <a href="#" class="btn btn-danger">Avaliar</a>
+      </div>
+    </div>
+
   </section>
+  <!-- Container dos vídeos  -->
   <div class="container-video">
     <video width="500px" height="500" autoplay loop muted src="videos/video1.mp4" type="video/mp4"></video>
-
     <video width="500px" height="500" autoplay loop muted src="videos/video2.mp4" type="video/mp4"></video>
   </div>
 
   <div>
-    </div>
-    <section class="container-sessao3">
-      <div class="container-titulos">
-        <h1 class="titulo"> NOSSA LOCALIZAÇÃO</h1>
+  </div>
+  <section class="container-sessao3">
+    <div class="container-titulo">
+      <h1 class="titulo"> NOSSA LOCALIZAÇÃO</h1>
+      <a href="https://www.google.com/maps/@-23.7256516,-46.5277048,14z?entry=ttu">
         <img src="imagens/logo-googlemaps.png" alt="IMAGEM DO MAPAS " height="200px">
-        <h3 class="subtitulo"> Rua Francisco de souza Ribeiro - 1523</h3>
+      </a>
+      <h3 class="subtitulo"> Rua Francisco de souza Ribeiro - 1523</h3>
+      <div class="container-redessocias">
+        <img src="./imagens/logo-instagram.png" alt="Istagram" height="20px">
+        <img src="./imagens/logo-facebook.png" alt="facebook" height="16px">
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="container-sessao4">
-      <form>
+  <section class="container-sessao4">
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">
+          <p class="subtitulo"> Seu e-mail:</p>
+        </label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+        <div id="emailHelp" class="form-text">Para nós é muito importante termos seu feedback</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">
+          <p class="subtitulo">Senha:</p>
+        </label>
+        <input type="password" class="form-control" id="exampleInputPassword1" required>
+      </div>
+      <div class="mb-3 form-check">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">
-            <p class="subtitulo"> Seu e-mail:</p>
-          </label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-          <div id="emailHelp" class="form-text">Para nós é muito importante termos seu feedback</div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">
-            <p class="subtitulo">Senha:</p>
-          </label>
-          <input type="password" class="form-control" id="exampleInputPassword1" required>
-        </div>
-        <div class="mb-3 form-check">
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Envie uma mensagem</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">
+          <label for="exampleFormControlTextarea1" class="form-label">Envie uma mensagem</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">
 
             </textarea>
-          </div>
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-      </form>
-    </section>
-
-    <footer>
-      <div class="container-footer">
-        <ul>
-          <li class="footer-navigation"> Institucional </li>
-          <li class="footer-navigation"> Quem somos </li>
-          <li class="footer-navigation"> Cafeteiras </li>
-        </ul>
-
-        <ul>
-          <li class="footer-navigation"> Como comprar </li>
-          <li class="footer-navigation"> Envio </li>
-          <li class="footer-navigation"> Pagamento </li>
-        </ul>
-
-        <ul>
-          <li class="footer-navigation"> Contato </li>
-          <li class="footer-navigation"> Endereços </li>
-          <li class="footer-navigation"> Redes sociais </li>
-        </ul>
       </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
-
-    <script src="script.js"></script>
-
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </section>
+  <!-- Sessão final _ Footer -->
+  <footer>
+    <div class="container-footer">
+      <ul>
+        <li class="footer-navigation"> Institucional </li>
+        <li class="footer-navigation"> Quem somos </li>
+        <li class="footer-navigation"> Cafeteiras </li>
+      </ul>
+      <ul>
+        <li class="footer-navigation"> Como comprar </li>
+        <li class="footer-navigation"> Envio </li>
+        <li class="footer-navigation"> Pagamento </li>
+      </ul>
+      <ul>
+        <li class="footer-navigation"> Contato </li>
+        <li class="footer-navigation"> Endereços </li>
+        <li class="footer-navigation"> Redes sociais </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
