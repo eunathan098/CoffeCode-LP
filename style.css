@@ -70,7 +70,8 @@ nav {
 
 .container-titulo {
     display: flex;
-    padding-top: 100px;
+    flex-direction: column;
+    padding-top: 70px;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -146,7 +147,11 @@ nav {
 
 .container-sobre {
     display: flex;
+    padding: 10px;
+    text-align: center;
     flex-direction: column;
+    justify-content: center;
+    
 }
 
 .container-sobre h1 {
@@ -155,12 +160,19 @@ nav {
     justify-content: center;
 }
 
+.line{
+    width: 50px;
+    height: 4px;
+    background-color:#d8ae70; ;
+}
+
 .preparos {
     display: flex;
+    height: 200px auto;
     justify-content: space-around;
     text-align: center;
     align-items: center;
-}
+} 
 
 .container-footer {
     display: flex;
@@ -170,6 +182,18 @@ nav {
     justify-content: space-around;
     background: black;
     color: #ffffff9d;
+}
+
+.footer-navigation{
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    gap: 10px;
+}
+
+.footer-navigation:hover{
+    color: #fff;
+    transform: translateX(-20px);
 }
 
 @media (max-width: 1200px) {
