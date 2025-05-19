@@ -14,11 +14,12 @@ html {
 }
 
 .logo-flutuante {
-    height: 40px;
+    height: 60px;
     position: fixed;
     cursor: pointer;
-    top: 93%;
+    top: 88%;
     left: 2%;
+    background-color: transparent;
 }
 
 header {
@@ -63,7 +64,6 @@ nav {
 .card {
     visibility: hidden;
     cursor: pointer;
-
 }
 
 .card:hover {
@@ -76,9 +76,8 @@ nav {
 
 .mobile-menu-icon {
     display: none;
+    background-color: black;
 }
-
-
 
 .mobile-menu {
     display: none;
@@ -100,6 +99,7 @@ nav {
 
 .container-sessao3 {
     display: flex;
+
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -109,7 +109,7 @@ nav {
 
 .container-titulo {
     display: flex;
-    padding-top: 80px;
+    padding-top: 50px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -121,13 +121,6 @@ nav {
     padding: 30px;
     justify-content: center;
     text-align: center;
-}
-
-.container-video {
-    display: flex;
-    gap: 20px;
-    text-align: center;
-    justify-content: center;
 }
 
 .titulo {
@@ -143,9 +136,10 @@ nav {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.container-redessociais img {
-    display: flex;
-    cursor: pointer;
+
+img{
+    background-color: black;
+    border: none;
 }
 
 .container-sobre h1 {
@@ -219,11 +213,6 @@ nav {
     .nav-item:hover {
         color: #fff;
         transition: 0.2s;
-    }
-
-    .container-video {
-        flex-wrap: wrap;
-        gap: 0px;
     }
 }
 
@@ -299,5 +288,13 @@ nav {
         flex-direction: column;
         text-align: center;
         padding-bottom: 1rem;
+    }
+
+    .titulo{
+        font-size: 20px;
+    }
+
+    .card{
+        width: 100%;
     }
 }
